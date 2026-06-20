@@ -24,3 +24,4 @@ When the countdown finishes, it prints "=== Countdown Complete ===".
 ## Author
  
 Daniel Agyemang Amoah — ID: 2526401992
+Computer Engineering,GCTU.
