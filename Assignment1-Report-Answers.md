@@ -99,30 +99,23 @@ Question 1
 Paste your final, working code.
 
 int startValue = 5;
-int ledPin = 13;
+int Led = 13;
 
-void flashLED(int times) {
-  int blinkCount = times;
-
-  while (blinkCount > 0) {
-    digitalWrite(ledPin, HIGH);
-    delay(200);
-    digitalWrite(ledPin, LOW);
-    delay(200);
-
-    blinkCount--;
+void flashLED(int times){
+    for(int i = 1 ; i <= times; i++){
+    digitalWrite(Led,HIGH);
+    delay(500);
+    digitalWrite(Led,LOW);
+    delay(500);
+    }
   }
-}
 
 void setup() {
-  pinMode(ledPin, OUTPUT);
   Serial.begin(9600);
-
+  pinMode(Led, OUTPUT);
+    int count = startValue;
   Serial.println("=== Smart Countdown Starting ===");
-
-  int count = startValue;
-
-  while (count > 0) {
+    while(count > 0){
     Serial.print("Count: ");
     Serial.println(count);
 
@@ -131,12 +124,13 @@ void setup() {
 
     count--;
   }
-
-  Serial.println("=== Countdown Complete ===");
+  Serial.println("=== Countdown Complete ===" );
 }
 
-void loop() {
+void loop() { 
+
 }
+
 
 Question 2
 
