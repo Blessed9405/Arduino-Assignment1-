@@ -4,7 +4,7 @@ Task 1 – Hello, Serial!
 
 Question 1
 
-What is the difference between int and float? Givto7e one example of when you would use each.
+What is the difference between int and float? Give one example of when you would use each.
 
 - "int" stores whole numbers without decimals.
 - "float" stores numbers with decimal values.
@@ -119,10 +119,10 @@ void setup() {
     Serial.print("Count: ");
     Serial.println(count);
 
-    flashLED(count);
-    delay(1000);
+   flashLED(count);
+   delay(1000);
 
-    count--;
+   count--;
   }
   Serial.println("=== Countdown Complete ===" );
 }
